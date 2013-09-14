@@ -1,27 +1,15 @@
 import java.util.Arrays;
-class MathmaticalProblems {
+class MathmaticalProblems implements ProblemsInterface{
 
-	public static void main(String[] args){
-		MathmaticalProblems problem = new MathmaticalProblems();
 
-		// System.out.println(sumOfMultipleOf3And5(Integer.parseInt(args[0])));
-		// System.out.println(problem.getSumOfEven(Long.parseLong(args[0])));
-		// problem.getLargestPrimeFactor(Long.parseLong(args[0]));
-		// System.out.println(problem.getPalindromicNumber());
-		// problem.getSmallestProduct(Integer.parseInt(args[0]));
-		// problem.getDifference(Integer.parseInt(args[0]));
-		problem.getSpecifiedPrime(Integer.parseInt(args[0]));
-	
-	}
-
-	public  long sumOfMultipleOf3And5(int threshold){
+	public void sumOfMultipleOf3And5(int threshold){
 		long sum = 0;
 		for(int i=1; i<threshold; i++){
 			if ((i%3 == 0) || (i%5 == 0) ) {
 				sum += i;
 			}
 		}
-		return sum;
+		System.out.println(sum);
 	}
 
 	private long[] generateFibonacci(long threshold){
@@ -47,7 +35,7 @@ class MathmaticalProblems {
 
 	}
 
-	public  long getSumOfEven(long threshold){
+	public  void getSumOfEven(long threshold){
 		long[] nums = generateFibonacci(threshold);
 		long sum = 0;
 		for (int i=0; i< nums.length ; i++ ) {
@@ -55,7 +43,7 @@ class MathmaticalProblems {
 				sum += nums[i];
 			}
 		}
-		return sum;
+		System.out.println(sum);
 	}
 
 	public void getLargestPrimeFactor(long num){
@@ -81,7 +69,7 @@ class MathmaticalProblems {
 
 	}
 
-	public long getPalindromicNumber(){
+	public void getPalindromicNumber(){
 		long num = 0;
 		for(int a=9; a>0; a--)
 			for (int b=9; b>=0; b--) 
@@ -99,7 +87,7 @@ class MathmaticalProblems {
 						}
 					}
 				}
-		return num;
+		System.out.println(num);
 	}
 
 	private long getGongYueShu(long x, long y){
