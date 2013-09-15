@@ -1,8 +1,9 @@
+
 class TestMain  
 {
 	public static void main(String[] args) 
 	{
-		ProblemsInterface problems = new MathmaticProbles();
+		ProblemsInterface problems = new MathmaticalProblems();
 
 		// problems.sumOfMultipleOf3And5(Integer.parseInt(args[0]));
 		// problem.getSumOfEven(Long.parseLong(args[0]));

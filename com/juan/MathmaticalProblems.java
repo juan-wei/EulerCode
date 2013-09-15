@@ -80,7 +80,8 @@ class MathmaticalProblems implements ProblemsInterface{
 						if(num%(11*i)==0){
 							if(remander>=100 && remander<=999){
 								System.out.println(num+"="+(11*i)+"*"+remander);
-								return num;
+								System.out.println(num);
+								return;
 								
 							}
 								
