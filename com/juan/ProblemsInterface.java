@@ -7,5 +7,6 @@ interface ProblemsInterface
 	public void getSmallestProduct(int num);
 	public void getDifference(long big);
 	public void getSpecifiedPrime(int total);
+	public void getLargestProductInASeries(int digit);
 } 
 

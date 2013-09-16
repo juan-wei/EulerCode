@@ -11,7 +11,8 @@ class TestMain
 		// problem.getPalindromicNumber();
 		// problem.getSmallestProduct(Integer.parseInt(args[0]));
 		// problem.getDifference(Integer.parseInt(args[0]));
-		problems.getSpecifiedPrime(Integer.parseInt(args[0]));
+		// problems.getSpecifiedPrime(Integer.parseInt(args[0]));
+		problems.getLargestProductInASeries(Integer.parseInt(args[0]));
 		
 	}
 }
