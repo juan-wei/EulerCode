@@ -8,5 +8,6 @@ interface ProblemsInterface
 	public void getDifference(long big);
 	public void getSpecifiedPrime(int total);
 	public void getLargestProductInASeries(int digit);
+	public void getProductOfSepcialPythagorean(int sum);
 } 
 

@@ -164,11 +164,9 @@ class MathmaticalProblems implements ProblemsInterface{
 								"84580156166097919133875499200524063689912560717606"+
 								"05886116467109405077541002256983155200055935729725"+
 								"71636269561882670428252483600823257530420752963450";
-		// long number =0;
-		long max = 0;
-		// int index = 0;
 		
-		// System.out.println(numString.length());
+		long max = 0;
+		
 		for(int i=digit; i<numString.length(); i++){
 			int product = 1;
 			for(int j=i;j>i-digit; j--)
@@ -176,15 +174,21 @@ class MathmaticalProblems implements ProblemsInterface{
 			
 			if(product >= max){
 				max = product;
-				// index = i;
 			}
 		}
-
-		// System.out.println(max);
-		// System.out.println(index);
-		
 		
 		System.out.println(max);
+	}
 
+	//Special Pythagorean triplet
+	public void getProductOfSepcialPythagorean(int sum){
+		for(int a=3; a<(sum-3)/3; a++){
+			for(int b=a+1; b<(sum-a)/2; b++){
+				if((a*a + b*b) == (sum-a-b)*(sum-a-b)){
+					System.out.println(a*b*(sum-a-b));
+					return;
+				}
+			}
+		}
 	}
 }
