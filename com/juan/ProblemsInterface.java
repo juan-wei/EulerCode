@@ -9,5 +9,6 @@ interface ProblemsInterface
 	public void getSpecifiedPrime(int total);
 	public void getLargestProductInASeries(int digit);
 	public void getProductOfSepcialPythagorean(int sum);
+	public void getSumOfPrime(long threshold);
 } 
 

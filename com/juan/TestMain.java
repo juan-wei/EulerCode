@@ -6,14 +6,14 @@ class TestMain
 		ProblemsInterface problems = new MathmaticalProblems();
 
 		// problems.sumOfMultipleOf3And5(Integer.parseInt(args[0]));
-		// problem.getSumOfEven(Long.parseLong(args[0]));
-		// problem.getLargestPrimeFactor(Long.parseLong(args[0]));
-		// problem.getPalindromicNumber();
-		// problem.getSmallestProduct(Integer.parseInt(args[0]));
-		// problem.getDifference(Integer.parseInt(args[0]));
+		// problems.getSumOfEven(Long.parseLong(args[0]));
+		// problems.getLargestPrimeFactor(Long.parseLong(args[0]));
+		// problems.getPalindromicNumber();
+		// problems.getSmallestProduct(Integer.parseInt(args[0]));
+		// problems.getDifference(Integer.parseInt(args[0]));
 		// problems.getSpecifiedPrime(Integer.parseInt(args[0]));
 		// problems.getLargestProductInASeries(Integer.parseInt(args[0]));
-		problems.getProductOfSepcialPythagorean(Integer.parseInt(args[0]));
-		
+		// problems.getProductOfSepcialPythagorean(Integer.parseInt(args[0]));
+		problems.getSumOfPrime(Long.parseLong(args[0]));
 	}
 }

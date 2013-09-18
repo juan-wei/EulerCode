@@ -191,4 +191,19 @@ class MathmaticalProblems implements ProblemsInterface{
 			}
 		}
 	}
+
+	//get the sum of specified primes
+	public void getSumOfPrime(long threshold){
+		long sum = 0;
+		outer:
+		for(long i=2; i<= threshold; i++){
+			for(long j=2; j<=(long)Math.sqrt((double)i); j++){
+				if(i%j == 0)
+					continue outer;
+			}
+			sum += i;
+		}
+
+		System.out.println(sum);
+	}
 }
