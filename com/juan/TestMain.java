@@ -15,6 +15,7 @@ class TestMain
 		// problems.getLargestProductInASeries(Integer.parseInt(args[0]));
 		// problems.getProductOfSepcialPythagorean(Integer.parseInt(args[0]));
 		// problems.getSumOfPrime(Long.parseLong(args[0]));
-		problems.getSolution11();
+		//problems.getSolution11();
+		problems.getSolution12();
 	}
 }

@@ -11,5 +11,7 @@ interface ProblemsInterface
 	public void getProductOfSepcialPythagorean(int sum);
 	public void getSumOfPrime(long threshold);
 	public void getSolution11();
+	public void getSolution12();
+
 } 
 

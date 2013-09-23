@@ -266,4 +266,46 @@ class MathmaticalProblems implements ProblemsInterface{
 
 		System.out.println(max);
 	}
+
+	private long[] getPrimeFactors(long n){
+
+		String str = n+" = ";
+		long[] factors = new long[65535];
+		for (long i=2; i<=n; i++ ) {
+			if(n%i == 0){
+				factors[(int)i] += 1;
+				str = str+i+" * ";
+				n = n/i;
+				i--;
+			}	
+		}
+		System.out.println(str.substring(0,str.length()-2));
+		return factors;
+	}
+	public void getSolution12(){
+		long n = 0;
+		long[] factors = new long[65535];
+		int count = 0;
+		
+		for(int i=7;;i++){
+			count = 1;
+			
+			n = i*(i+1)/2;
+			if(isEven(n)){
+				factors = getPrimeFactors(n);
+				for(int j=1; j<factors.length;j++){
+					if(factors[j] != 0){
+						count *= (factors[j]+1);
+					}
+				}
+				if(count >= 500){
+					System.out.println("count = "+count);
+					System.out.println(n);
+					return;
+				}
+
+				System.out.println(n);
+			}
+		}
+	}
 }
