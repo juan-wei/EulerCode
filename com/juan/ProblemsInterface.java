@@ -12,6 +12,6 @@ interface ProblemsInterface
 	public void getSumOfPrime(long threshold);
 	public void getSolution11();
 	public void getSolution12();
-
+	public void getSolution13();
 } 
 

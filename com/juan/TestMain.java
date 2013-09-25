@@ -16,6 +16,7 @@ class TestMain
 		// problems.getProductOfSepcialPythagorean(Integer.parseInt(args[0]));
 		// problems.getSumOfPrime(Long.parseLong(args[0]));
 		//problems.getSolution11();
-		problems.getSolution12();
+		// problems.getSolution12();
+		problems.getSolution13();
 	}
 }

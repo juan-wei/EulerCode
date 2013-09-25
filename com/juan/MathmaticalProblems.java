@@ -1,4 +1,8 @@
 import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.math.BigInteger;
 class MathmaticalProblems implements ProblemsInterface{
 
 
@@ -306,6 +310,31 @@ class MathmaticalProblems implements ProblemsInterface{
 
 				System.out.println(n);
 			}
+		}
+	}
+
+	public void getSolution13(){
+		try{
+			BigInteger[] nums = new BigInteger[100];
+			FileReader reader = new FileReader("E:\\GitHub\\EulerCode\\com\\juan\\txt13.txt");
+			BufferedReader br = new BufferedReader(reader);
+			String str = null;
+			int i = 0;
+			while((str = br.readLine()) != null){
+				nums[i++] = new BigInteger(str);
+			}
+			br.close();
+			reader.close();
+			
+			BigInteger sum = nums[0];
+			for(int j=1; j<nums.length; j++){
+				sum = sum.add(nums[j]);
+			}
+			String sumString = String.valueOf(sum);
+			System.out.println(sumString.substring(0, 10));
+			
+		}catch(IOException e){
+			e.printStackTrace();
 		}
 	}
 }
